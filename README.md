@@ -7,3 +7,4 @@ This chatbot has made with
 * llm_index
 * openai-models
 * django-framework
+* django-rest-ramework
