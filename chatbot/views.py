@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .chatbot_logic import get_response
 from django.http import HttpResponse
 from datetime import datetime
+from .api.views import ChatbotView
 
 # Create your views here.
 def home(request):
