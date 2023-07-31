@@ -1,6 +1,6 @@
-## 1Finance-Custom-Knowledge-Chatbot
+## MVLU-Custom-Knowledge-Chatbot
 
-Python Version==3.10.11
+Compatible Python Version == 3.10.11
 
 This chatbot has made with
 * langchain
