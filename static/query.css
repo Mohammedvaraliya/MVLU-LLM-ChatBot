@@ -44,7 +44,6 @@ img, svg{
     color: white;
     font-size: 1.5rem;
     padding: 1rem 2rem;
- 
     background: #424242;
     
 }
@@ -66,7 +65,7 @@ img, svg{
     padding: 0.5rem;
     margin: 0.75rem;
     border-radius: 0.5rem;
-    border: tra;
+    border: transparent;
 }
 
 .bot{
@@ -76,11 +75,11 @@ img, svg{
 .user,
 .bot{
     font-size: 1.5rem;
-    padding: 3rem 0;
+    padding: 2rem 0rem 2rem 0rem;
 }
 
-.bot :last-child{
-    padding-bottom: 4rem;
+.chat {
+    margin-bottom: 10rem;
 }
 
 /* cursor styling while response has not generated */

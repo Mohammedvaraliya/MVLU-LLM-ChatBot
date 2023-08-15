@@ -12,7 +12,9 @@
 </head>
 
 <body>
-  <div class="chat"></div>
+  <div class="chat">
+    <div id="chatbot-dialogue"></div>
+  </div>
   <form id="assistant-form" method="post" action="{% url 'query' %}">
     {% csrf_token %}
     <div class="form">
@@ -31,6 +33,10 @@
     const form = document.getElementById('assistant-form');
     const chatDiv = document.querySelector('.chat');
     let botMessagesContainer;  // Define botMessagesContainer as a global variable
+
+    function scrollToBottom() {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
   
     function displayUserMessage(message) {
       const userDiv = document.createElement('div');
@@ -45,6 +51,8 @@
       containerDiv.appendChild(userMessage);
       userDiv.appendChild(containerDiv);
       chatDiv.appendChild(userDiv);
+
+      scrollToBottom();
   
       // Create a new bot message container with the cursor style
       const botMessageContainer = document.createElement('div');
@@ -54,6 +62,8 @@
       botMessageContainer.appendChild(botMessage);
       botMessagesContainer = botMessageContainer; // Update the botMessagesContainer
       chatDiv.appendChild(botMessageContainer);  // Append the new bot message container
+
+      scrollToBottom();
     }
   
     function displayBotMessage(message) {
@@ -75,6 +85,8 @@
       containerDiv.appendChild(botMessage);
       botDiv.appendChild(containerDiv);
       chatDiv.appendChild(botDiv);
+
+      scrollToBottom();
     }
   
     form.addEventListener('submit', function (event) {
@@ -101,9 +113,5 @@
         .catch(error => console.error(error));
     });
   </script>
-  
-
-
 </body>
-
 </html>
