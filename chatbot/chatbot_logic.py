@@ -9,7 +9,7 @@ def construct_index():
     # set maximum input size
     max_input_size = 500
     # set number of output tokens
-    num_outputs = 500
+    num_outputs = 1000
     # set maximum chunk overlap
     max_chunk_overlap = 20
     # set chunk size limit
