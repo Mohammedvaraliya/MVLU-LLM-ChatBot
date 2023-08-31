@@ -1,5 +1,5 @@
 """
-ASGI config for onefinance_custom_chatbot project.
+ASGI config for mvlu-llm-chatbot project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'onefinance_custom_chatbot.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mvlu-llm-chatbot.settings')
 
 application = get_asgi_application()
